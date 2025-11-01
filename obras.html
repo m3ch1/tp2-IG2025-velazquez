@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obras | A. Michael Noll</title>
+
+  <!-- Bootstrap y CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-dark text-light">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-secondary">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">A. Michael Noll</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto" id="nav-list">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="biografia.html">Biografía</a></li>
+          <li class="nav-item"><a class="nav-link" href="obras.html">Obras</a></li>
+          <li class="nav-item"><a class="nav-link" href="sketches.html">Sketches</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="entrevistas.html">Entrevistas</a></li>
+          <li class="nav-item"><a class="nav-link" href="procesos.html">Procesos creativos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="informacion.html">Información TP</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="text-center py-5 bg-gradient">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Obras destacadas</h1>
+      <p class="text-secondary">Catálogo visual del trabajo de A. Michael Noll</p>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container my-5">
+    <section class="row text-center g-4">
+      <!-- Obra 1 -->
+      <div class="col-md-4">
+        <div class="card bg-black text-light border-secondary h-100">
+          <img src="img/aaa.jpg" class="card-img-top" alt="Computer Composition with Lines">
+          <div class="card-body">
+            <h5 class="card-title">Computer Composition with Lines</h5>
+            <p class="card-text small">
+              1964. Serie de composiciones generadas mediante algoritmos en FORTRAN para explorar la estética geométrica de Mondrian. 
+              Fue una de las primeras comparaciones directas entre obra humana y obra computacional.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-secondary">
+            <a href="galeria.html" class="btn btn-outline-light btn-sm">Ver en galería</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Obra 2 -->
+      <div class="col-md-4">
+        <div class="card bg-black text-light border-secondary h-100">
+          <img src="img/noll3.jpg" class="card-img-top" alt="Gaussian Quadratic">
+          <div class="card-body">
+            <h5 class="card-title">Gaussian Quadratic</h5>
+            <p class="card-text small">
+              1965. Curvas generadas a partir de funciones gaussianas para simular suavidad visual y continuidad matemática. 
+              Un estudio sobre cómo el azar controlado puede producir armonía estética.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-secondary">
+            <a href="galeria.html" class="btn btn-outline-light btn-sm">Ver en galería</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Obra 3 -->
+      <div class="col-md-4">
+        <div class="card bg-black text-light border-secondary h-100">
+          <img src="img/noll4.jpg" class="card-img-top" alt="Patterns from Random Processes">
+          <div class="card-body">
+            <h5 class="card-title">Patterns from Random Processes</h5>
+            <p class="card-text small">
+              1966. Uso de procesos aleatorios para generar tramas visuales coherentes. 
+              Representa la síntesis entre matemática, programación y composición artística.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-secondary">
+            <a href="galeria.html" class="btn btn-outline-light btn-sm">Ver en galería</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5">
+      <div class="text-center">
+        <h2 class="fw-bold mb-3">Método de trabajo</h2>
+        <p class="text-secondary">
+          Noll generaba múltiples versiones de una misma composición, modificando parámetros numéricos 
+          mínimos dentro de sus algoritmos en FORTRAN. Esto le permitía observar cómo pequeñas variaciones 
+          matemáticas alteraban la percepción visual. Su proceso combinaba lógica, error y estética, 
+          adelantándose a los principios del arte generativo moderno.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-center py-4 border-top border-secondary">
+    <p class="mb-0 small text-secondary">
+      Sitio desarrollado por <strong>Mercedes Velazquez</strong> · Informática General 2025 · Cátedra Drelichman · Paleo · Nadel · Morales
+    </p>
+  </footer>
+
+  <!-- Bootstrap y JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
