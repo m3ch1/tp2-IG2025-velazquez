@@ -27,7 +27,7 @@
           <li class="nav-item"><a class="nav-link" href="obras.html">Obras</a></li>
           <li class="nav-item"><a class="nav-link" href="sketches.html">Sketches</a></li>
           <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
-          <li class="nav-item"><a class="nav-link" href="entrevistas.html">Entrevistas</a></li>
+          <li class="nav-item"><a class="nav-link active" href="entrevistas.html">Entrevistas</a></li>
           <li class="nav-item"><a class="nav-link" href="procesos.html">Procesos creativos</a></li>
           <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
           <li class="nav-item"><a class="nav-link" href="informacion.html">Información TP</a></li>
@@ -39,47 +39,100 @@
   <!-- HEADER -->
   <header class="text-center py-5 bg-gradient">
     <div class="container">
-      <h1 class="display-5 fw-bold">Entrevistas y artículos</h1>
-      <p class="text-secondary">Reflexiones y perspectivas de A. Michael Noll sobre el arte computacional</p>
+      <h1 class="display-5 fw-bold">Entrevistas y Reflexiones</h1>
+      <p class="text-secondary">Diálogos con A. Michael Noll sobre código, arte y máquinas</p>
     </div>
   </header>
 
   <!-- MAIN -->
   <main class="container my-5">
-    <section class="mb-5">
-      <h2 class="fw-bold mb-3">“El arte digital no reemplaza al artista, lo transforma”</h2>
-      <p>
-        En una entrevista de 1968, Noll afirmaba que el propósito de su trabajo no era automatizar la creatividad, 
-        sino explorar los límites de la percepción y la lógica humana a través de la programación. 
-        Su interés se centraba en cómo la máquina podía colaborar con el artista, no reemplazarlo.
+    <!-- Introducción -->
+    <section class="mb-5 text-center">
+      <p class="text-secondary mx-auto" style="max-width:800px;">
+        En estas entrevistas y conversaciones, Noll ofrece una mirada directa a su pensamiento: por qué decidió convertir la computadora en instrumento artístico, cómo veía la estética, cuál era el papel del azar, y cómo anticipó muchas de las preguntas del arte digital actual.
       </p>
-      <blockquote class="blockquote border-start border-info ps-3 text-secondary">
-        “La computadora no tiene intención estética. Solo produce resultados. 
-        La estética surge de las decisiones que el programador toma.”
-      </blockquote>
     </section>
 
+    <!-- Entrevista destacada -->
     <section class="mb-5">
-      <h2 class="fw-bold mb-3">“El azar controlado y la belleza matemática”</h2>
-      <p>
-        En otra publicación de Bell Labs, Noll describía su fascinación por las estructuras aleatorias. 
-        Decía que su desafío consistía en crear algoritmos capaces de generar equilibrio visual sin repetición mecánica.
+      <h2 class="fw-bold mb-3">“It all began in 1961” – una conversación en retrospectiva</h2>
+      <p class="text-light fst-italic">Fragmento de la entrevista concedida a D. Dodds en 2014:</p>
+      <blockquote class="blockquote border-start border-info ps-3 text-secondary">
+        “On one occasion … a person named Elwyn Berlekamp comically called it ‘computer art’, but I thought to myself: ‘gee, people were making computer music, why don’t we do computer art?’”
+      </blockquote>
+      <p class="text-secondary">
+        En esta conversación, Noll relata cómo un error de plotter en Bell Telephone Laboratories le dio la idea de explorar patrones visuales generados por computadora. Su experimentación surgió tanto del juego como de la curiosidad científica. En varias entrevistas repite la idea de que la computadora funciona como un medio creativo que puede sorprender al programador.
       </p>
-      <p class="text-secondary small">
-        Fuente: <a href="https://en.wikipedia.org/wiki/A._Michael_Noll" target="_blank" class="link-light">Wikipedia</a> · 
-        <a href="https://proyectoidis.org/michael-noll" target="_blank" class="link-light">Proyectoidis</a>
-      </p>
+    </section>
+
+    <!-- Preguntas & respuestas -->
+    <section class="mb-5">
+      <h2 class="fw-bold mb-3">Preguntas seleccionadas</h2>
+      <div class="accordion" id="faqEntrevistas">
+        <div class="accordion-item bg-black border-secondary">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button bg-black text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+              ¿Cuál era el objetivo de sus primeros experimentos?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqEntrevistas">
+            <div class="accordion-body text-secondary">
+              El objetivo era demostrar el potencial de la computadora como medio visual: imágenes fijas, animaciones 3D, e incluso esculturas programadas. Noll quería mostrar a artistas y científicos que la computadora podía ser una herramienta creativa y experimental.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-black border-secondary">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button bg-black text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              ¿Cómo concibe la autoría cuando la obra está generada por un algoritmo?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqEntrevistas">
+            <div class="accordion-body text-secondary">
+              Noll sostenía que la computadora puede ser un medio que colabora con el creador. El programador decide reglas, parámetros y límites; la máquina ejecuta y puede aportar resultados inesperados. Así, la autoría se reparte entre intención humana y efectos del sistema.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-black border-secondary">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button bg-black text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+              ¿Ve alguna gran diferencia entre aquellos primeros trabajos y el arte digital actual?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqEntrevistas">
+            <div class="accordion-body text-secondary">
+              Para Noll, muchas preguntas actuales sobre IA y creatividad tienen raíces en experimentos de los 50 y 60. La diferencia principal es la escala y las herramientas: hoy hay más potencia, pero los principios conceptuales son continuaciones de aquellos inicios.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Referencias y recursos -->
+    <section>
+      <h2 class="fw-bold mb-3 text-center">Más para investigar</h2>
+      <ul class="list-group list-group-flush bg-transparent text-secondary">
+        <li class="list-group-item bg-transparent border-secondary">
+          <a href="https://rightclicksave.com/article/the-interview-a-michael-noll" class="link-light" target="_blank">Entrevista completa de Douglas Dodds (2014)</a>
+        </li>
+        <li class="list-group-item bg-transparent border-secondary">
+          <a href="https://old.predella.it/archivio/index537c.html?Itemid=103&catid=76&id=187&option=com_content&view=article" class="link-light" target="_blank">“Ten Questions to Michael Noll” (Predella)</a>
+        </li>
+        <li class="list-group-item bg-transparent border-secondary">
+          <a href="https://archivesit.org.uk/interviews/dr-a-michael-noll/" class="link-light" target="_blank">Entrevista / Archives of IT (2022)</a>
+        </li>
+      </ul>
     </section>
   </main>
 
   <!-- FOOTER -->
-  <footer class="bg-black text-center py-4 border-top border-secondary">
+  <footer class="bg-black text-center py-4 border-top border-secondary mt-5">
     <p class="mb-0 small text-secondary">
       Sitio desarrollado por <strong>Mechi [Tu Apellido]</strong> · Informática General 2025 · Cátedra Drelichman · Paleo · Nadel · Morales
     </p>
   </footer>
 
-  <!-- Bootstrap y main.js -->
+  <!-- Bootstrap JS y main.js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>

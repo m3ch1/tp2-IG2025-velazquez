@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Procesos Creativos | A. Michael Noll</title>
 
-  <!-- Bootstrap y  CSS -->
+  <!-- Bootstrap y CSS -->
   <link 
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
     rel="stylesheet">
@@ -28,7 +28,7 @@
           <li class="nav-item"><a class="nav-link" href="sketches.html">Sketches</a></li>
           <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
           <li class="nav-item"><a class="nav-link" href="entrevistas.html">Entrevistas</a></li>
-          <li class="nav-item"><a class="nav-link" href="procesos.html">Procesos creativos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="procesos.html">Procesos creativos</a></li>
           <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
           <li class="nav-item"><a class="nav-link" href="informacion.html">Información TP</a></li>
         </ul>
@@ -39,46 +39,108 @@
   <!-- HEADER -->
   <header class="text-center py-5 bg-gradient">
     <div class="container">
-      <h1 class="display-5 fw-bold">Procesos creativos</h1>
+      <h1 class="display-5 fw-bold">Procesos Creativos</h1>
       <p class="text-secondary">De la fórmula matemática a la obra estética</p>
     </div>
   </header>
 
   <!-- MAIN -->
   <main class="container my-5">
+
+    <!-- Sección de contexto -->
     <section class="mb-5">
-      <h2 class="fw-bold mb-3">Método de experimentación</h2>
-      <p>
-        Noll trabajaba en un entorno experimental donde cada imagen era el resultado de variaciones paramétricas. 
-        Utilizaba FORTRAN para definir fórmulas que generaban coordenadas aleatorias dentro de un sistema de límites controlados.
-      </p>
-      <p>
-        Para cada obra, el ingeniero producía decenas de variaciones pequeñas, analizando cómo 
-        el cambio de una sola variable podía alterar completamente la experiencia visual.
+      <h2 class="fw-bold mb-3">Explorando el proceso: máquina + arte</h2>
+      <p class="text-secondary mx-auto" style="max-width:800px;">
+        En la década de 1960, Noll estaba convencido de que la computadora podía convertirse en un medio artístico legítimo.  
+        A diferencia de los artistas tradicionales, él trabajaba desde la lógica de la máquina: variables, bucles, números aleatorios, plotters mecánicos.  
+        Su objetivo era doble: por un lado, estudiar si un orden sintético podía provocar respuestas estéticas humanas; y por otro, reconfigurar la idea de autoría artística.
       </p>
     </section>
 
-    <section class="mb-5">
-      <h2 class="fw-bold mb-3">Tecnología en Bell Labs</h2>
-      <p>
-        Sus primeros plotters electromecánicos trazaban líneas sobre papel continuo o microfilm. 
-        Este proceso era lento, preciso y totalmente programado por código. 
-        A diferencia del arte manual, el resultado dependía de la ejecución exacta de cada instrucción.
-      </p>
-      <div class="text-center mt-4">
+    <!-- Técnica y herramientas -->
+    <section class="mb-5 row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
         <img src="img/plotter.jpg" alt="Plotter Bell Labs" class="img-fluid rounded shadow">
       </div>
+      <div class="col-md-6">
+        <h3 class="fw-bold mb-3">Herramientas, algoritmos y azar</h3>
+        <p class="text-secondary">
+          Durante sus años en Bell Telephone Laboratories (1961-1975), Noll utilizó ordenadores como el IBM 7090 o plotters electromecánicos para trazar miles de combinaciones de líneas, curvas y puntos.
+        </p>
+        <p class="text-secondary">
+          Él mismo relató que su primer “accidente” estético ocurrió cuando un plotter generó unas líneas erráticas que él calificó como “interesantes patrones” y decidió ver lo que podía conseguir al manipularlos intencionalmente. 
+        </p>
+      </div>
     </section>
+
+    <!-- Propósitos y experimentos -->
+    <section class="mb-5">
+      <h3 class="fw-bold mb-3">Dimensión experimental y estética</h3>
+      <p class="text-secondary mx-auto" style="max-width:800px;">
+        Noll diseñó experimentos para comparar imágenes generadas por computadora con obras humanas. Por ejemplo, en su estudio <em>“Human or Machine”</em> comparó una obra de Piet Mondrian con una versión generada por computadora: la mayoría de los participantes preferían la versión de la máquina sin saberlo.
+      </p>
+      <p class="text-secondary mx-auto" style="max-width:800px;">
+        Sus objetivos incluían:
+      </p>
+      <ul class="text-secondary" style="max-width:800px; margin:auto;">
+        <li>Demostrar que lo digital podía generar experiencias estéticas equivalentes a lo humano.</li>
+        <li>Investigar cuáles parámetros (aleatoriedad, orden, variación) afectan la percepción visual.</li>
+        <li>Desafiar la idea de autoría artística proponiendo que el sistema-máquina también crea.</li>
+      </ul>
+    </section>
+
+    <!-- Etapas del proceso -->
+    <section class="mb-5">
+      <h3 class="fw-bold mb-3">Etapas del proceso</h3>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="card bg-black text-light border-secondary h-100 p-3">
+            <h5 class="card-title">Diseño algorítmico</h5>
+            <p class="card-text small">
+              Definir ecuaciones, funciones de distribución (como la gaussiana), rutas de trazado, reglas de intervención mínima. :contentReference[oaicite:7]{index=7}
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card bg-black text-light border-secondary h-100 p-3">
+            <h5 class="card-title">Generación visual</h5>
+            <p class="card-text small">
+              El programa ejecuta cientos de variaciones: líneas cambian, curvas se desplazan, el azar se combina con límites. Noll ejecutaba decenas de versiones para ver cómo alteraban la estética. :contentReference[oaicite:8]{index=8}
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card bg-black text-light border-secondary h-100 p-3">
+            <h5 class="card-title">Exhibición y reflexión</h5>
+            <p class="card-text small">
+              Las imágenes resultantes fueron influenciadas por pruebas estéticas (¿humano o máquina?), exhibidas en galerías, y archivadas para futura investigación. :contentReference[oaicite:9]{index=9}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Legado -->
+    <section>
+      <h3 class="fw-bold mb-3">Legado y relevancia actual</h3>
+      <p class="text-secondary mx-auto" style="max-width:800px;">
+        Hoy, cuando se habla de arte generativo, algoritmos, inteligencia artificial y visualización de datos, muchas de las preguntas que se planteaba Noll siguen vigentes: ¿puede la máquina crear ? ¿qué significa autoría ? ¿qué es estética ?  
+        Su posición pionera en la hibridación entre arte y tecnología lo convierte en un referente para creaciones contemporáneas que fusionan código y visión.
+      </p>
+    </section>
+
   </main>
 
   <!-- FOOTER -->
-  <footer class="bg-black text-center py-4 border-top border-secondary">
+  <footer class="bg-black text-center py-4 border-top border-secondary mt-5">
     <p class="mb-0 small text-secondary">
-      Sitio desarrollado por <strong>Mechi [Tu Apellido]</strong> · Informática General 2025 · Cátedra Drelichman · Paleo · Nadel · Morales
+      Sitio desarrollado por <strong>Mechi [Tu Apellido]</strong> · Informática General 2025 · Cátedra Drelichman · 
     </p>
   </footer>
 
-  <!-- Bootstrap y main.js -->
+  <!-- Bootstrap JS y main.js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
