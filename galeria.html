@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Galería | A. Michael Noll</title>
 
-  <!-- Bootstrap y CSS -->
-  <link 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
-    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
-</head>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lg-video.min.css"> 
+  
+  </head>
 
 <body class="bg-dark text-light">
-  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-secondary">
     <div class="container">
       <a class="navbar-brand fw-bold" href="index.html">A. Michael Noll</a>
@@ -21,7 +22,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="menu">
-       <ul class="navbar-nav ms-auto" id="nav-list">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="biografia.html">Biografía</a></li>
           <li class="nav-item"><a class="nav-link" href="obras.html">Obras</a></li>
@@ -36,55 +37,82 @@
     </div>
   </nav>
 
-  <!-- HEADER -->
   <header class="text-center py-5 bg-gradient">
     <div class="container">
-      <h1 class="display-5 fw-bold">Galería Interactiva</h1>
-      <p class="text-secondary">Seis obras y visualizaciones del trabajo de Noll</p>
+      <h1 class="display-5 fw-bold">Galería de obras y animaciones</h1>
+      <p class="text-secondary">Exploraciones visuales y experimentos digitales de A. Michael Noll</p>
     </div>
   </header>
 
-  <!-- MAIN -->
   <main class="container my-5">
-    <section class="row g-4" id="galeria">
+    <section class="row g-4" id="lightgallery">
       <div class="col-sm-6 col-md-4">
-        <img src="img/gal1.jpg" alt="Obra 1" class="img-fluid rounded thumb">
+        <a href="img/random-motion.gif" data-sub-html="<h4>Random Motion</h4><p>Animación generada por computadora.</p>">
+          <img src="img/random-motion.gif" alt="Random Motion" class="img-fluid rounded">
+        </a>
       </div>
-      <div class="col-sm-6 col-md-4">
-        <img src="img/gal2.jpg" alt="Obra 2" class="img-fluid rounded thumb">
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <img src="img/gal3.jpg" alt="Obra 3" class="img-fluid rounded thumb">
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <img src="img/gal4.jpg" alt="Obra 4" class="img-fluid rounded thumb">
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <img src="img/gal5.jpg" alt="Obra 5" class="img-fluid rounded thumb">
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <img src="img/gal6.jpg" alt="Obra 6" class="img-fluid rounded thumb">
-      </div>
-    </section>
-  </main>
 
-  <!-- MODAL DE IMAGEN -->
-  <div id="modal" class="modal-custom">
-    <span id="cerrar">&times;</span>
-    <img id="imagen-ampliada" src="" alt="Obra ampliada">
-    <p id="caption"></p>
-  </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="img/human-motion.gif" data-sub-html="<h4>Human Motion</h4><p>Simulación digital de movimiento humano.</p>">
+          <img src="img/human-motion.gif" alt="Human Motion" class="img-fluid rounded">
+        </a>
+      </div>
 
-  <!-- FOOTER -->
+      <div class="col-sm-6 col-md-4">
+        <a href="img/hypercube.gif" data-sub-html="<h4>Hypercube</h4><p>Visualización de un objeto en 4 dimensiones.</p>">
+          <img src="img/hypercube.gif" alt="Hypercube" class="img-fluid rounded">
+        </a>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <a href="img/gal1.jpg" data-sub-html="<h4>Computer Composition with Lines (1964)</h4><p>Una de las primeras obras de arte digital. </p>">
+          <img src="img/gal1.jpg" alt="Computer Composition with Lines" class="img-fluid rounded">
+        </a>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <a href="img/gal2.jpg" data-sub-html="<h4>Gaussian Quadratic (1965)</h4><p>Exploración de formas aleatorias controladas.</p>">
+          <img src="img/gal2.jpg" alt="Gaussian Quadratic" class="img-fluid rounded">
+        </a>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <a href="img/gal3.jpg" data-sub-html="<h4>Vertical-Horizontal Number Three (1964)</h4><p>Composición basada en estructuras simples.</p>">
+          <img src="img/gal3.jpg" alt="Vertical-Horizontal Number Three" class="img-fluid rounded">
+        </a>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <a href="img/tetrahedron.gif" data-sub-html="<h4>Tetrahedron</h4><p>Visualización de un objeto geométrico.</p>">
+          <img src="img/tetrahedron.gif" alt="Tetrahedron" class="img-fluid rounded">
+        </a>
+      </div>
+      
+      <div class="col-sm-6 col-md-4">
+        <a href="img/hypersphere.gif" data-sub-html="<h4>Hypersphere</h4><p>Simulación de una esfera en dimensiones superiores.</p>">
+          <img src="img/hypersphere.gif" alt="Hypersphere" class="img-fluid rounded">
+        </a>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <a href="img/atomic-motion.gif" data-sub-html="<h4>Atomic Motion</h4><p>Representación de un movimiento atómico.</p>">
+          <img src="img/atomic-motion.gif" alt="Atomic Motion" class="img-fluid rounded">
+        </a>
+      </div>
+    </section>
+</main>
+
   <footer class="bg-black text-center py-4 border-top border-secondary">
     <p class="mb-0 small text-secondary">
-      Sitio desarrollado por <strong>Mercedes Velazquez</strong> · Informática General 2025 · Cátedra Drelichman · Paleo · Nadel · Morales
+      Sitio desarrollado por <strong>Mercedes Velazquez</strong> · Informática General 2025 · Cátedra Drelichman · 
     </p>
   </footer>
 
-  <!-- Bootstrap y scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/video/lg-video.min.js"></script>
+
   <script src="js/galeria.js"></script>
 </body>
 </html>
