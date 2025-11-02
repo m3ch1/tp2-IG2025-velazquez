@@ -1,1 +1,2 @@
 # tp2-IG2025-velazquez
+El presente sitio web está dedicado al artista e ingeniero A. Michael Noll, pionero del arte computacional. Fue desarrollado como parte del Trabajo Práctico N°2 de la materia Informática General. El proyecto combina HTML, CSS, Bootstrap y JavaScript vanilla para explorar la intersección entre arte, tecnología y estética generativa, siguiendo los lineamientos del programa 2025.
