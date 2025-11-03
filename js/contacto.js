@@ -21,19 +21,24 @@ document.addEventListener("DOMContentLoaded", function() {
     errorMensaje.textContent = "";
     resultado.textContent = "";
 
-    let valido = true;
+    let valido = true; //Variable booleana que asume que el formulario está correcto hasta que se encuentre algo mal. Si aparece un error, la pones en false.
 
     // Validación de nombre
+    //trim() elimina espacios al inicio y al final. Si queda vacío, considerás que no hay nombre. Si esta vacio, muestra el mensaje en errorNombre y marca valido = false.
     if (nombre.value.trim() === "") {
-      errorNombre.textContent = "Por favor ingresá tu nombre.";
-      valido = false;
+      errorNombre.textContent = "Por favor ingresá tu nombre.";//
+      valido = false; 
     }
 
-    // Validación de email (simple)
-    const regexEmail = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+    // Validación de email con regexp simple
+    const regexEmail = /^[^@\s]+@[^@\s]+\.[^@\s]+$/; //^ indica inicio, $ fin, [^@\s]+ uno o mas caracteres que no sean arroba ni espacio, \. un punto literal.
+
+    //Primero compruebo si esta vacio
     if (email.value.trim() === "") {
       errorEmail.textContent = "El email es obligatorio.";
       valido = false;
+
+    // Si no esta vacio, compruebo si cumple con el patron regexEmail.test(email.value)
     } else if (!regexEmail.test(email.value)) {
       errorEmail.textContent = "El formato del email no es válido.";
       valido = false;

@@ -4,10 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (galleryContainer) {
         // Inicialización de LightGallery SIN el plugin lgVideo
-        lightGallery(galleryContainer, {
-            selector: 'a',
+        lightGallery(galleryContainer, { 
+            selector: 'a',  //LightGallery mira dentro del contenedor, y hace clicables los elementos que son enlaces (<a>). En mi HTML, cada imagen está envuelta en un <a>.
             speed: 500,
-            // Quitamos la línea de plugins: [lgVideo]
             closable: true,
             download: false 
         });
