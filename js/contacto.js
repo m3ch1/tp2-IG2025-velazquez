@@ -1,5 +1,4 @@
 // contacto.js
-// Validación del formulario de contacto. Vanilla JS dentro del marco teórico.
 
 document.addEventListener("DOMContentLoaded", function() {
   const form = document.getElementById("form-contacto");
